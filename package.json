@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && copy index.html dist\\",
+    "build": "vite build && npx shx cp index.html dist\\",
     "serve": "vite preview",
     "ai-server": "node server.js"
   },
@@ -21,6 +21,7 @@
     "@motion-canvas/vite-plugin": "^3.12.0",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^26.1.2",
+    "shx": "^0.4.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^5.4.5",
     "vite": "^5.2.0"
