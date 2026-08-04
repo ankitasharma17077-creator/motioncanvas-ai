@@ -1,35 +1,28 @@
 {
   "name": "motioncanvas-ai",
-  "version": "0.1.0",
   "private": true,
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "ai-server": "node server.js"
   },
   "dependencies": {
-    "@mediapipe/camera_utils": "^0.3.1675466862",
-    "@mediapipe/hands": "^0.4.1675469240",
-    "@mediapipe/tasks-vision": "^0.10.35",
-    "@react-three/drei": "^10.7.7",
-    "@react-three/fiber": "^9.6.1",
-    "framer-motion": "^12.42.2",
-    "next": "16.2.11",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "react-icons": "^5.7.0",
-    "react-webcam": "^7.2.0",
-    "three": "^0.185.1"
+    "@motion-canvas/2d": "^3.17.2",
+    "@motion-canvas/core": "^3.17.2",
+    "@motion-canvas/ui": "^3.17.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "openai": "^4.52.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.11",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "@motion-canvas/vite-plugin": "^3.12.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.1.2",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.0"
   }
 }
